@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#orbit {
+    width: 600px;
+    height: 600px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    position: relative;
+}
+#earth {
+    width: 80px;
+    height: 80px;
+    background: url('earth.png') no-repeat center center / cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 260px; /* 50% of orbit height minus half of Earth height */
+    left: 260px; /* 50% of orbit width minus half of Earth width */
+    border: 2px solid red; /* Added border for debugging */
+}
+#moon {
+    width: 30px;
+    height: 30px;
+    background: url('moon.png') no-repeat center center / cover;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid blue; /* Added border for debugging */
+}
+.controls {
+    margin-top: 20px;
+}
+#info {
+    margin-top: 10px;
+    font-size: 0.9em;
+}

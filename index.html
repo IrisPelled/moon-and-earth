@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth-Moon Orbit Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div id="orbit">
+            <div id="earth"></div>
+            <div id="moon"></div>
+        </div>
+        <div class="controls">
+            <label for="speed">Base Speed: <span id="speedValue">1</span></label>
+            <input type="range" id="speed" min="0.1" max="2" step="0.05" value="1">
+            <br>
+            <label for="radius">Radius: <span id="radiusValue">100</span> pixels</label>
+            <input type="range" id="radius" min="50" max="120" step="1" value="100">
+        </div>
+        <div id="info"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
